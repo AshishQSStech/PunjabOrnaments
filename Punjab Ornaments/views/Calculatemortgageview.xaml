@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Punjab_Ornaments.viewmodels" 
+             x:DataType="viewmodels:CalculateMortgageViewModel"
+             x:Class="Punjab_Ornaments.views.Calculatemortgageview">
+    <StackLayout>
+        <Label Text="Start Date"/>
+        <DatePicker x:Name="Startdate" Date="{Binding Startdate}"/>
+        <Label Text="End Date"/>
+        <DatePicker x:Name="enddate" Date="{Binding Enddate}"/>
+        <Label Text="Amount"/>
+        <Entry x:Name="mortgageamount" Text="{Binding MortgageAmount}"/>
+        <Label Text="Rate"/>
+        <Entry x:Name="rate" Text="{Binding MortgageRate}"/>
+        <Label Text="validity(Month)"/>
+        <Entry x:Name="validity" Text="{Binding MortgageValidity}"/>
+        <Button Text="Calculate" Command="{Binding CalculateMortgageCommand}" />
+    </StackLayout>
+</ContentPage>

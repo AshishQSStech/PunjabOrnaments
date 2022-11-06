@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Punjab_Ornaments.views.HomePageView"
+             xmlns:viewmodel="clr-namespace:Punjab_Ornaments.viewmodels"
+             x:DataType="viewmodel:HomePageViewModel">
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="edit"/>
+    </ContentPage.ToolbarItems>-->
+    
+<StackLayout>
+        <Label Text="Today Rate"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"/>
+        <Frame>
+        <StackLayout Orientation="Horizontal">
+                <Frame Background="OrangeRed"
+                   CornerRadius="10"
+                   HorizontalOptions="CenterAndExpand">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                                                  Command="{Binding EditRateCommand}"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Orientation="Horizontal">
+                        <Label Text="Gold"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Gold"/>
+                        <Label Text="{Binding GoldRate}"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Gold"/>
+                </StackLayout>
+            </Frame>
+
+                <Frame BackgroundColor="OrangeRed"
+                       CornerRadius="10"
+                       HorizontalOptions="CenterAndExpand">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                                                  Command="{Binding EditRateCommand}"/>
+                    </Frame.GestureRecognizers>
+                    <StackLayout HorizontalOptions="Center"
+                             VerticalOptions="Start"
+                             Orientation="Horizontal">
+                        <Label Text="Silver"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Gold"/>
+                        <Label Text="{Binding SilverRate}"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Gold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

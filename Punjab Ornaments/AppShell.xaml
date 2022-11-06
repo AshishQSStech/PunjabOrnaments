@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Punjab_Ornaments.views.AppShell"
+       xmlns:views="clr-namespace:Punjab_Ornaments.views">
+
+    <FlyoutItem Icon="abc.png"
+                Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:HomePageView}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Icon="abc.png"
+                Title="Stock">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:StockPageView}"/>
+        </Tab>
+    </FlyoutItem>
+    
+    <!--<FlyoutItem Icon="abc.png"
+                Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:Calculatemortgageview}"/>
+        </Tab>
+    </FlyoutItem>-->
+    
+    <FlyoutItem Icon="abc.png"
+                Title="Calculate">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:DisplayResult}"/>
+        </Tab>
+    </FlyoutItem>
+    
+    <FlyoutItem Icon="abc.png"
+                Title="Mortgage Calculate">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:DisplayResult}"/>
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>

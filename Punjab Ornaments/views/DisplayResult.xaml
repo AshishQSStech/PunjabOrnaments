@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Punjab_Ornaments.views.DisplayResult">
+    
+    <StackLayout>
+        <Label Text="Start date" FontAttributes="Bold"/>
+        <DatePicker x:Name="startdatepicker" Date="{Binding StartDate}"/>
+
+        <Label Text="end date" FontAttributes="Bold"/>
+        <DatePicker x:Name="enddatepicker" Date="{Binding EndDate}"/>
+
+        <Label Text="Rate of Intrest" FontAttributes="Bold"/>
+        <Entry x:Name="intrestrate" Keyboard="Numeric" Text="3"/>
+
+        <Label Text="Validity" FontAttributes="Bold"/>
+        <Entry x:Name="validity" Keyboard="Numeric" Text="0"/>
+
+        <Label Text="Amount" FontAttributes="Bold"/>
+        <Entry x:Name="principalamount" Keyboard="Numeric" Text="{Binding PrincipalAmount}"/>
+
+        <Button Text="Calculate" Clicked="Button_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>

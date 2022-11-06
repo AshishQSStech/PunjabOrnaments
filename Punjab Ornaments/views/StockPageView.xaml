@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Punjab_Ornaments.Views.StockPageView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>-->
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Punjab_Ornaments.views.StockPageView" 
+                xmlns:views="clr-namespace:Punjab_Ornaments.views">
+    <TabBar>
+        <ShellContent Title="Pending"
+                      Icon="abc.png"
+                      ContentTemplate="{DataTemplate views:Calculatemortgageview}"/>
+        <ShellContent Title="Complete"
+                      Icon="abc.png"
+                      ContentTemplate="{DataTemplate views:Calculatemortgageview}"/>
+    </TabBar>
+</Shell>
+    
